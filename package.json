@@ -1,0 +1,23 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "Created with CodeSandbox",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aneenajohn/DSA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aneenajohn/DSA/issues"
+  },
+  "homepage": "https://github.com/aneenajohn/DSA#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

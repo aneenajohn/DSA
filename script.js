@@ -1,12 +1,22 @@
-const fishes = ["Nemo"];
+const {performance} = require('perf_hooks');
+const fishes = ["Nemo", "dory", "gaja", "bubba" ,"pingu"];
+// const entirePond = new Array(2000).fill("Nemo");
 
-const findNemo = (array) => {
+const findingNemo = (array) => {
+  let t0 = performance.now();
   for (let i=0; i < array.length; i++) {
-    if (array[i].toLowerCase() ==="nemo") {
-      return console.log("Found Nemo!!!");
+    if (array[i] ==="Nemo") {
+      console.log("Found Nemo!!!");
     }
-    console.log("Nemo not found :(");
+    else{
+      console.log("Nemo not found :(");
+    }
   }
+  let t1 = performance.now();
+  console.log("Call to finding nemo took "+(t1-t0)+" ms");
 };
 
-findNemo(fishes);
+findingNemo(fishes);
+// findingNemo(entirePond);
+
+
