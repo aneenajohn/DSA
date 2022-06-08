@@ -36,7 +36,7 @@ Here as the no. of input elements increases, then the no. of operations increase
 
 **BigO Exercise 1) What is the Big O of the below function? (Hint, you may want to go line by line)**
 
-````
+```
 function funChallenge(input) {
 	let a = 10;
 	a = 50 + 3;
@@ -46,13 +46,13 @@ function funChallenge(input) {
 		a++;
 	}
 	return a;
-}```
+}
+```
 
 
 <details>
 <summary>Solution for Ex 1</summary>
-````
-
+```
 function funChallenge(input) {
 let a = 10; // O(1)
 a = 50 + 3; // O(1)
@@ -62,14 +62,14 @@ let stranger = true; // O(n)
 a++; // O(n)
 }
 return a; // O(1)
-}```
+}
+```
 Ans: Big O( 3*O(1) + 4*O(n) ) = Big O(3 + 4n) ⇒ This simplifies to Big O(n)
-
 </details>
 
 **BigO Exercise 2) What is the Big O of the below function? (Hint, you may want to go line by line)**
 
-````function anotherFunChallenge(input) .
+```function anotherFunChallenge(input) .
   let a = 5;
   let b = 10;
   let c = 50;
