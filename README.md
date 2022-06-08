@@ -114,6 +114,4 @@ let whoAmI = "I don't know"; // O(1)
 = 4 + 4n + 3n
 = Big O(4 +7n) ⇒ This simplifies to Big O(n)
 
-Ans: Big O( 3\*O(1) + 4\*O(n) ) = Big O(3 + 4n) ⇒ This simplifies to Big O(n)
-
 </details>
