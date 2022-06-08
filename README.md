@@ -49,7 +49,6 @@ function funChallenge(input) {
 }
 ```
 
-
 <details>
 <summary>Solution for Ex 1</summary>
 
@@ -65,7 +64,9 @@ a++; // O(n)
 return a; // O(1)
 }
 ```
+
 Ans: Big O( 3*O(1) + 4*O(n) ) = Big O(3 + 4n) ⇒ This simplifies to Big O(n)
+
 </details>
 
 **BigO Exercise 2) What is the Big O of the below function? (Hint, you may want to go line by line)**
@@ -89,7 +90,8 @@ Ans: Big O( 3*O(1) + 4*O(n) ) = Big O(3 + 4n) ⇒ This simplifies to Big O(n)
 ```
 
 <details>
-<summary>Solution for Ex 1</summary>
+<summary>Solution for Ex 2</summary>
+
 ```
 function anotherFunChallenge(input) {
 let a = 5; // O(1)
@@ -106,11 +108,12 @@ let q = j _ 2; // O(n)
 }
 let whoAmI = "I don't know"; // O(1)
 }
+```
 
-= 4*O(1) + 4*O(n) + 3*O(n)
+= 4*O(1) + 4*O(n) + 3\*O(n)
 = 4 + 4n + 3n
 = Big O(4 +7n) ⇒ This simplifies to Big O(n)
-```
-Ans: Big O( 3*O(1) + 4\*O(n) ) = Big O(3 + 4n) ⇒ This simplifies to Big O(n)
+
+Ans: Big O( 3\*O(1) + 4\*O(n) ) = Big O(3 + 4n) ⇒ This simplifies to Big O(n)
 
 </details>
