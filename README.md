@@ -150,3 +150,41 @@ So Big O in general concentrates on the worst case scenario (ie) Lets say
 - if "nemo" is present as the 1st element of thisarray then this loop operates only once, hence it will be Big O(1)
 - But the worst possible case is either "nemo" being on the last element or on none of the elements of the array then this loop will operate for n times (n = no. of input elemnets/fishes) ⇒ Big O(n)
 - Hence Big O shoud be considered as O(n)
+
+### R1) Remove Constants:
+
+Consider the code below:
+
+```
+const printFirstItemThenFirstHalfThenSayHi100Times = (items) => {
+
+  console.log(items[0]); // O(1)
+
+  const middleItem = Math.floor(items.length/2);
+  console.log({middleItem})
+  let index=0;
+  while(index < middleItem){    // O(n/2)
+    console.log(items[index]);
+    index++;
+  }
+
+  for(let i=0; i<100; i++){ //O(100)
+    console.log("Hi");
+  }
+}
+
+printFirstItemThenFirstHalfThenSayHi100Times(everyone);
+
+```
+
+Hence excluding the variable assignments and minor calculations:
+
+Big O ⇒ O(1) + O(n/2) + O(100)
+
+= 1+ n/2 +100
+
+= n/2 +101 ⇒ n/2 ⇒ n
+
+therefore, Big O for the above code is O(n)
+
+In large scale input, Constants doesnt matter much hence that can be removed like above.
