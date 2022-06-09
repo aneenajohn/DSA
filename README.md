@@ -115,3 +115,13 @@ let whoAmI = "I don't know"; // O(1)
 = Big O(4 +7n) ⇒ This simplifies to Big O(n)
 
 </details>
+
+## Simplyfying Big O:
+
+- In most cases, we dont have to precisely measeure Big O line by line instead we can simply say O(n) or under whichever category it falls
+  based on these 4 rules below:
+
+  - R1) Worst case
+  - R2) Remove constants
+  - R3) Different terms for inputs
+  - R4) Drop non dominants
