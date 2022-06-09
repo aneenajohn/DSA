@@ -125,3 +125,28 @@ let whoAmI = "I don't know"; // O(1)
   - R2) Remove constants
   - R3) Different terms for inputs
   - R4) Drop non dominants
+
+### R1) W0rst Case:
+
+Consider the following code:
+
+```
+const everyone = ["dory", "bruce", "marlin", "nemo", "gill", "bloat", "nigel", "squirt", "darla", "hank"];
+
+const findingNemo = (array) => {
+  for (let i=0; i < array.length; i++) {
+    console.log("Inside loop");
+    if (array[i] === "nemo") {
+      return console.log("Found Nemo!!!");
+    }
+  }
+};
+
+findingNemo(everyone)
+```
+
+So Big O in general concentrates on the worst case scenario (ie) Lets say
+
+- if "nemo" is present as the 1st element of thisarray then this loop operates only once, hence it will be Big O(1)
+- But the worst possible case is either "nemo" being on the last element or on none of the elements of the array then this loop will operate for n times (n = no. of input elemnets/fishes) ⇒ Big O(n)
+- Hence Big O shoud be considered as O(n)
