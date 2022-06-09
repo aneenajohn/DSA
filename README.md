@@ -116,7 +116,7 @@ let whoAmI = "I don't know"; // O(1)
 
 </details>
 
-## Simplyfying Big O:
+## Simplifying Big O:
 
 - In most cases, we dont have to precisely measeure Big O line by line instead we can simply say O(n) or under whichever category it falls
   based on these 4 rules below:
